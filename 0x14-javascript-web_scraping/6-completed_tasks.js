@@ -1,5 +1,5 @@
 
-#!/usr/bin/ node 
+#!/usr/bin/ node
 
 const request = require('request');
 const url = process.argv[2];
@@ -15,8 +15,8 @@ const task = tasks[i];
 if (task.completed === true) {
 if (completed[task.userId] === undefined) {
 completed[task.userId] = 1;
-} 
-else 
+}
+else
 {
 completed[task.userId]++;
 }
