@@ -5,8 +5,8 @@ request(process.argv[2], (error, response, body) => {
     const todos = JSON.parse(body);
     const finished = {};
     todos.forEach((todo) => {
-      if (finished[todo.userId] === undefined && todo.completed) {
-        finished[todo.userId] = 1;
+      if (finished[todo.userId] === undefined && todo.completed)  {
+       	 finished[todo.userId] = 1;
       } else if (todo.completed) {
         finished[todo.userId] += 1;
       }
